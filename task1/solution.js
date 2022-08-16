@@ -37,10 +37,10 @@ function translationWeekDays(string) {
     'СУББОТА': 'SATURDAY',
     'ВОСКРЕСЕНЬЕ': 'SUNDAY',
   };
-  str = string.replace(/([A-ZА-ЯЁ]+){2}/gu, (word) => translateDays[word]);
-  return str;
+  return string.replace(/([A-ZА-ЯЁ]+){2,11}/gu, (word) => translateDays[word]);
 }
 
 // Result
-console.log(translationWeekDays(str));
+str = translationWeekDays(str);
+console.log(str);
 
