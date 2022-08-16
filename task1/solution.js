@@ -1,3 +1,5 @@
+'use strict';
+
 let str =
   `
   Старший братец ПОНЕДЕЛЬНИК –
@@ -25,17 +27,20 @@ let str =
   очень любит угощенье
 `;
 
-function translationWeekDays (string) {
+function translationWeekDays(string) {
   const translateDays = {
-    'ПОНЕДЕЛЬНИК':'MONDAY',
-    'ВТОРНИК':'TUESDAY',
-    'СРЕДА':'WEDNESDAY',
-    'ЧЕТВЕРГ':'THURSDAY',
-    'ПЯТНИЦА':'FRIDAY',
-    'СУББОТА':'SATURDAY',
-    'ВОСКРЕСЕНЬЕ':'SUNDAY',
-  }
+    'ПОНЕДЕЛЬНИК': 'MONDAY',
+    'ВТОРНИК': 'TUESDAY',
+    'СРЕДА': 'WEDNESDAY',
+    'ЧЕТВЕРГ': 'THURSDAY',
+    'ПЯТНИЦА': 'FRIDAY',
+    'СУББОТА': 'SATURDAY',
+    'ВОСКРЕСЕНЬЕ': 'SUNDAY',
+  };
   str = string.replace(/([A-ZА-ЯЁ]+){2}/gu, (word) => translateDays[word]);
-  console.log(str);
+  return str;
 }
-translationWeekDays(str);
+
+// Result
+console.log(translationWeekDays(str));
+
