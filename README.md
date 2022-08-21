@@ -18,5 +18,5 @@ npm install
 ### Running application
 
 ```
-npm run start:task2
+npm run start:task3
 ```
