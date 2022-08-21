@@ -1,1 +1,5 @@
 "extends": "metarhia"
+"parserOptions": {
+  "ecmaVersion": 6,
+  "sourceType": "module"
+}
