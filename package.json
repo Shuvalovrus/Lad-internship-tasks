@@ -160,7 +160,7 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./task3/index.js"
   },
   "repository": {
     "type": "git",
